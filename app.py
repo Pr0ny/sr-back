@@ -10,7 +10,7 @@ def next_track():
     # Get a random track name from the array
     random_track = random.choice(tracks)
     # Return the random track name as JSON
-    return jsonify({"next_track": random_track})
+    return jsonify(random_track)
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=5000, debug=True)
